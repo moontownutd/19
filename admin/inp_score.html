@@ -19,12 +19,27 @@
 
     <link rel="stylesheet" href="../resource/css/reset.css">
     <link rel="stylesheet" href="../resource/css/layout.css">
+    <link rel="stylesheet" href="../resource/css/sub.css">
 
 
     <script src="../resource/js/jquery-3.4.0.js"></script>
     <script src="../resource/js/default.js"></script>
 
     <!-- 개별 css, js -->
+    <script>
+        $.ajax({
+
+            url: "https://script.google.com/macros/s/AKfycbwFHcyaXM7P6z9S7U6EVYCcbR5WF19LIcvWwMyM1ZLRqr0PVC4/exec",
+
+            data: {
+                A: "a",
+                B: "b"
+            },
+
+            type: "POST"
+
+        });
+    </script>
 
 </head>
 
@@ -62,7 +77,9 @@
 
         <!-- start of :: contents -->
         <div id="contents">
-
+            <form>
+                <input type="text" />
+            </form>
         </div>
         <!-- // end of :: contents -->
 

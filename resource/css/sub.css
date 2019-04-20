@@ -1,0 +1,30 @@
+/*RULE*/
+
+h2 {
+    font-size: 40px;
+    color: rgb(15, 15, 1);
+    text-align: center;
+}
+
+.txt-box__rule {
+    padding: 20px;
+}
+
+.txt-box__rule p {
+    color: rgb(15, 15, 1);
+}
+
+.txt-box__rule p.tit {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.txt-box__rule p.txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+strong {
+    font-weight: 700;
+}

@@ -5,14 +5,18 @@ body {
     min-width: 320px;
     font-family: 'Orbitron', 'Noto Sans KR', sans-serif;
     font-size: 10px;
+    color: rgb(15, 15, 1);
     line-height: 1.5;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 
 /*HEADER*/
 
 #header {
-    border-bottom: 2px solid rgb(113, 113, 113);
+    border-bottom: 2px solid rgb(222, 222, 222);
     box-sizing: border-box;
 }
 
@@ -44,7 +48,7 @@ body {
     display: block;
     position: absolute;
     left: 50%;
-    background-color: rgb(15, 15, 31);
+    background-color: rgb(15, 15, 1);
     -webkit-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
@@ -103,8 +107,8 @@ body.gnb--open .btn__menu .bot {
     display: block;
     font-weight: 700;
     font-size: 36px;
-    color: rgb(15, 15, 31);
-    line-height: 70px;
+    color: rgb(15, 15, 1);
+    line-height: 76px;
     background: url(../images/logo.png) no-repeat left center;
     background-size: 60px;
 }
@@ -133,6 +137,8 @@ body.gnb--open .bg__wrap {
     top: auto;
     left: 0;
     background-color: rgb(255, 255, 255);
+    border-right: 2px solid rgb(222, 222, 222);
+    box-sizing: border-box;
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
@@ -148,7 +154,7 @@ body.gnb--open .gnb {
 }
 
 .gnb ul li {
-    border-bottom: 1px solid rgb(113, 113, 113);
+    border-bottom: 1px solid rgb(222, 222, 222);
 }
 
 .gnb ul li a {
@@ -159,7 +165,7 @@ body.gnb--open .gnb {
     left: 0;
     font-weight: 700;
     font-size: 20px;
-    color: rgb(15, 15, 31);
+    color: rgb(15, 15, 1);
     line-height: 60px;
 }
 
@@ -170,6 +176,29 @@ body.gnb--open .gnb {
     right: 20px;
     font-weight: 300;
     font-size: 30px;
+}
+
+
+/*footer*/
+
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.copyright {
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(15, 15, 1);
+    text-align: right;
+    line-height: 36px;
+}
+
+#contents {
+    padding: 30px 0 60px;
 }
 
 @media screen and (max-width: 550px) {
@@ -194,7 +223,7 @@ body.gnb--open .gnb {
         height: 50px;
         padding-left: 50px;
         font-size: 1.2rem;
-        line-height: 50px;
+        line-height: 56px;
         background-size: 40px;
     }
     .bg__wrap {
@@ -202,6 +231,7 @@ body.gnb--open .gnb {
     }
     .gnb {
         height: calc(100% - 52px);
+        border-right: 0;
     }
     .gnb ul li a {
         padding: 0 20px;
