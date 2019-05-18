@@ -10,9 +10,8 @@
 
         init: function() {
             layout.btnGnb = $('.btn__menu');
-
-            layout.btnGnb.on('click', layout.gnbOnOff);
             layout.loadLayout();
+            layout.btnGnb.on('click', layout.gnbOnOff);
         },
         loadLayout: function() {
             $("#header").load("../layout/header.html");
