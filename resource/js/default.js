@@ -1,17 +1,26 @@
-$(document).ready(function() {
-    layout.init();
-});
+(function($) {
+
+    $(document).ready(function() {
+        layout.init();
+    });
 
 
-var layout = {
-    btnGnb: null,
+    var layout = {
+        btnGnb: null,
 
-    init: function() {
-        layout.btnGnb = $('.btn__menu');
+        init: function() {
+            layout.btnGnb = $('.btn__menu');
 
-        layout.btnGnb.on('click', layout.gnbOnOff);
-    },
-    gnbOnOff: function() {
-        $('body').toggleClass('gnb--open');
+            layout.btnGnb.on('click', layout.gnbOnOff);
+            layout.loadLayout();
+        },
+        loadLayout: function() {
+            $("#header").load("../layout/header.html");
+            $("#footer").load("../layout/footer.html");
+        },
+        gnbOnOff: function() {
+            $('body').toggleClass('gnb--open');
+        }
     }
-}
+
+}(jQuery));

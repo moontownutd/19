@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Orbitron:400,700');
 body {
     min-width: 320px;
+    min-height: 100vh;
     font-family: 'Orbitron', 'Noto Sans KR', sans-serif;
     font-size: 10px;
     color: rgb(15, 15, 1);
